@@ -26,19 +26,19 @@ let weather = {
         document.querySelector(".city").innerText = "Weather Forecast for " + name;
         if(id == 800){
           wIcon.src = "WeatherIcons/clear.svg";
-          document.body.style.backgroundImage = "url('rain.jpg')";
+          document.body.style.backgroundImage = "url('clear.jpg')";
         }else if(id >= 200 && id <= 232){
           wIcon.src = "WeatherIcons/rain.svg";  
           document.body.style.backgroundImage = "url('rain.jpg')";
         }else if(id >= 600 && id <= 622){
           wIcon.src = "WeatherIcons/snow.svg";
-          document.body.style.backgroundImage = "url('rain.jpg')";
+          document.body.style.backgroundImage = "url('snow.jpg')";
         }else if(id >= 701 && id <= 781){
           wIcon.src = "WeatherIcons/haze.svg";
-          document.body.style.backgroundImage = "url('rain.jpg')";
+          document.body.style.backgroundImage = "url('hazy.jpg')";
         }else if(id >= 801 && id <= 804){
           wIcon.src = "WeatherIcons/cloud.svg";
-          document.body.style.backgroundImage = "url('cloudy.jpg')";
+          document.body.style.backgroundImage = "url('cloud.jpg')";
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
           wIcon.src = "WeatherIcons/rain.svg";
           document.body.style.backgroundImage = "url('rain.jpg')";
@@ -68,5 +68,5 @@ let weather = {
       }
     });
 
-    weather.getWeather("tulsa");
+    weather.getWeather('texas');
  
